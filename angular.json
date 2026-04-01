@@ -24,6 +24,11 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "/assets"
+              },
+              {
+                "glob": ".nojekyll",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": ["src/styles.css"],
@@ -49,6 +54,13 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "github-pages": {
+              "baseHref": "/RequerimientosApp/",
+              "outputPath": {
+                "base": "docs",
+                "browser": ""
+              }
             }
           },
           "defaultConfiguration": "production"

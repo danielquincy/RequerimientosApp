@@ -2,10 +2,12 @@
   "name": "requerimientos-app",
   "version": "1.0.0",
   "private": true,
+  "description": "SPA: npm run build:github-pages genera docs/ para GitHub Pages (ajusta baseHref al nombre del repo).",
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "build:github-pages": "ng build --configuration production,github-pages"
   },
   "dependencies": {
     "@angular/common": "^19.2.0",
